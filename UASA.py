@@ -89,7 +89,7 @@ def print_sound(indata):
                 timer_thread.start()
         else:
             STOP_THREAD = True
-    except:
+    except KeyboardInterrupt:
         quit
 
 # Authenticate to Twitter
