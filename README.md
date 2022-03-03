@@ -50,6 +50,8 @@ You will also need to get API keys from Telegram and Twitter:
 
 [Telegram API keys](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjonqW3yqn2AhUUWsAKHeUwBZ8QFnoECAYQAQ&url=https%3A%2F%2Fcore.telegram.org%2F&usg=AOvVaw00WR4l6PW_bRSqM5hCaKEf)
 
+Once you get the API info you will need to put it into [auth.yaml](/auth.yaml)
+
 As well as Jack:
 
 [Jack](https://jackaudio.org/downloads/)
