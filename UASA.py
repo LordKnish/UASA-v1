@@ -16,7 +16,6 @@ from datetime import datetime, timedelta
 from threading import Thread
 from pathlib import Path
 from time import sleep
-import sys
 import numpy as np
 import pytz
 import tweepy
@@ -71,7 +70,8 @@ def timer():
 def main():
     try:
         with sd.Stream(callback=print_sound):
-            sd.sleep(-1)
+            while True:
+                sd.sleep(50000000)
     except KeyboardInterrupt:
         print("Stopped")
 def print_sound(indata, outdata, frames, time, status):
@@ -91,27 +91,27 @@ def print_sound(indata, outdata, frames, time, status):
         else:
             STOP_THREAD = True
     except KeyboardInterrupt:
-        sys.exit(0)
+        quit()
 
-# Authenticate to Twitter
-apikeys = get_file_contents('auth.yaml')
-auth = tweepy.OAuthHandler(apikeys['twitter']['consumer_key'], apikeys['twitter']['consumer_secret'])
-auth.set_access_token(apikeys['twitter']['access_token'], apikeys['twitter']['access_token_secret'])
-TOWNNAME = 'Kyiv' #Set the towns name
-print(os.name)
-if os.name == 'nt':
-    IMAGEFILE = dname + '\\images\\' + TOWNNAME + '.png' #Attempt to load the image file (Windows)
-else:
-    IMAGEFILE = dname + '/images/' + TOWNNAME + '.png' #Attempt to load the image file (Linux)
-CHANNELID = -1001511264252 #Telegram channel ID
 
-api = tweepy.API(auth) # Create API object
-tz = pytz.timezone('Europe/Kiev') # Set a timezone for the time of the alerts
-TIME5MINUTES = datetime.now(tz).strftime('%H:%M:%S')
-if Path(IMAGEFILE).is_file():
-    print ("Image file exists!")
-else:
-    print ("Image file does not exist. Closing program.")
-    sys.exit(0)
 if __name__ == "__main__":
+    # Authenticate to Twitter
+    apikeys = get_file_contents('auth.yaml')
+    auth = tweepy.OAuthHandler(apikeys['twitter']['consumer_key'], apikeys['twitter']['consumer_secret'])
+    auth.set_access_token(apikeys['twitter']['access_token'], apikeys['twitter']['access_token_secret'])
+    TOWNNAME = 'Kyiv' #Set the towns name
+    print(os.name)
+    if os.name == 'nt':
+        IMAGEFILE = dname + '\\images\\' + TOWNNAME + '.png' #Attempt to load the image file (Windows)
+    else:
+        IMAGEFILE = dname + '/images/' + TOWNNAME + '.png' #Attempt to load the image file (Linux)
+    CHANNELID = -1001511264252 #Telegram channel ID
+
+    api = tweepy.API(auth) # Create API object
+    tz = pytz.timezone('Europe/Kiev') # Set a timezone for the time of the alerts
+    TIME5MINUTES = datetime.now(tz).strftime('%H:%M:%S')
+    if Path(IMAGEFILE).is_file():
+        print ("Image file exists!")
+    else:
+        print ("Image file does not exist.")
     main()
