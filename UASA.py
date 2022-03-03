@@ -16,6 +16,7 @@ from datetime import datetime, timedelta
 from threading import Thread
 from pathlib import Path
 from time import sleep
+import sys
 import numpy as np
 import pytz
 import tweepy
@@ -23,7 +24,6 @@ import telepot
 global TIME5MINUTES
 import yaml
 import sounddevice as sd
-import sys
 THREADRUNONCE = False
 
 abspath = os.path.abspath(__file__)
@@ -33,7 +33,7 @@ os.chdir(dname)
 
 def get_file_contents(filename): #Get the contents of the API key file
     API_FILE = filename
-    with open(API_FILE, 'r') as config_file:
+    with open(API_FILE, 'r', encoding='utf8') as config_file:
         config = yaml.load(config_file)
     return config
 
