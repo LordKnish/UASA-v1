@@ -26,4 +26,5 @@ jobs:
         pip install tweepy==3.10.0
     - name: Analysing the code with pylint
       run: |
-        pylint --rcfile=/.github/workflows/.pylintrc $(git ls-files '*.py')
+        git clone https://github.com/LordKnish/UASA/
+        pylint --rcfile=.pylintrc $(git ls-files '*.py')
