@@ -16,7 +16,7 @@ Created by Aurora Knish from [Aurora Intel](https://twitter.com/AuroraIntel)
   * [Required libraries](#required-libraries)
 - [Road map and Recent additions:](#road-map-and-recent-additions-)
   * [Roadmap](#roadmap)
-  * [Recent additions:](#recent-additions-)
+  * [Recent additions:](#recent-additions)
 
 
 
@@ -46,12 +46,10 @@ You will also need to get API keys from Telegram and Twitter:
 [Telegram API keys](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjonqW3yqn2AhUUWsAKHeUwBZ8QFnoECAYQAQ&url=https%3A%2F%2Fcore.telegram.org%2F&usg=AOvVaw00WR4l6PW_bRSqM5hCaKEf)
 ## Road map and Recent additions:
 ### Roadmap
-```
-:soon: - To be done
-:wavy_dash: - Being worked on now
-:x: - Cancelled or pushed off
-:heavy_check_mark: - Done
-```
+> :soon: - To be done |
+> :wavy_dash: - Being worked on now |
+> :x: - Cancelled or pushed off |
+> :heavy_check_mark: - Done |
 
 - Ability to detect if a stream goes down and switch to an alternate :soon:
 
