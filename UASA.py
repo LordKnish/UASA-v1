@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Created by Aurora Knish
 #Version 1.0.1
 
@@ -22,6 +23,7 @@ import telepot
 global TIME5MINUTES
 import yaml
 import sounddevice as sd
+import sys
 THREADRUNONCE = False
 
 abspath = os.path.abspath(__file__)
@@ -89,8 +91,8 @@ def print_sound(indata):
                 timer_thread.start()
         else:
             STOP_THREAD = True
-    except:
-        quit
+    except KeyboardInterrupt:
+        sys.exit(0)
 
 # Authenticate to Twitter
 apikeys = get_file_contents('auth.yaml')
@@ -111,6 +113,6 @@ if Path(IMAGEFILE).is_file():
     print ("Image file exists!")
 else:
     print ("Image file does not exist. Closing program.")
-    quit()
+    sys.exit(0)
 if __name__ == "__main__":
     main()
