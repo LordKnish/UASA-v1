@@ -1,6 +1,7 @@
 
 ![alt text](https://pbs.twimg.com/profile_banners/1348714168782827524/1646140988/1500x500)
 ![Active](https://img.shields.io/badge/development%20status-active-green) ![license](https://img.shields.io/badge/license-gpl3-blue) ![language](https://img.shields.io/badge/language-python-orange)
+
 A python based siren detector that uses volume data from audio sinks to determine if a siren has gone off.
 
 Data is sent to [Twitter](https://twitter.com/UkraineAlert) and [Telegram](https://t.co/oAoK13twYY)
@@ -15,8 +16,9 @@ Created by Aurora Knish from [Aurora Intel](https://twitter.com/AuroraIntel)
   * [Required libraries](#required-libraries)
 - [Road map and Recent additions:](#road-map-and-recent-additions-)
   * [Roadmap](#roadmap)
-  * [Recent additions:](#recent-additions-)
-
+  * [Recent additions:](#recent-additions)
+- [About me:](#about-me)
+  * [🔗 Links](#-links)
 
 
 
