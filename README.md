@@ -69,7 +69,8 @@ pactl load-module module-null-sink sink_name=vspeaker sink_properties=device.des
 
 - Ability to detect if a stream goes down and switch to an alternate :soon:
 
-- Add more towns :wavy_dash:
+- Towns additions:
+  - Kyiv ✔️
   - Kyiviy Rih :wavy_dash:
   - Dnipro :soon:
 
