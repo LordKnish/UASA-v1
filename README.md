@@ -49,6 +49,15 @@ You will also need to get API keys from Telegram and Twitter:
 [Twitter API keys](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwji85Swyqn2AhUOQkEAHQd0DFQQFnoECAQQAQ&url=https%3A%2F%2Fdeveloper.twitter.com%2Fen%2Fdocs%2Ftwitter-api%2Fgetting-started%2Fgetting-access-to-the-twitter-api&usg=AOvVaw3rl-dk4Y3VvM4lwRfsMUbl)
 
 [Telegram API keys](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjonqW3yqn2AhUUWsAKHeUwBZ8QFnoECAYQAQ&url=https%3A%2F%2Fcore.telegram.org%2F&usg=AOvVaw00WR4l6PW_bRSqM5hCaKEf)
+
+As well as Jack:
+
+[Jack](https://jackaudio.org/downloads/)
+
+You will also need to setup a Virtual Audio Sink which can be done with the following command on Linux:
+```
+pactl load-module module-null-sink sink_name=vspeaker sink_properties=device.description=virtual_speaker
+```
 ## Road map and Recent additions:
 ### Roadmap
 
