@@ -1,6 +1,6 @@
 
 ![alt text](https://pbs.twimg.com/profile_banners/1348714168782827524/1646140988/1500x500)
-![Active](https://img.shields.io/badge/development%20status-active-green) ![license](https://img.shields.io/badge/license-gpl3-blue) ![language](https://img.shields.io/badge/language-python-orange)
+![Active](https://img.shields.io/badge/development%20status-active-green) ![Deployed Version](https://img.shields.io/badge/deployed%20version-1.0.1-brightgreen) ![license](https://img.shields.io/badge/license-gpl3-blue) ![language](https://img.shields.io/badge/language-python-orange)
 
 A python based siren detector that uses volume data from audio sinks to determine if a siren has gone off.
 
