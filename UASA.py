@@ -1,16 +1,21 @@
 #Created by Aurora Knish
 #Version 1.0.1
 
-import numpy as np
+# pylint: disable=superfluous-parens
+# pylint: disable=trailing-whitespace
+# pylint: disable=line-too-long
+# pylint disable=invalid-name
+import os
 from datetime import datetime, timedelta
+from threading import Thread
+from pathlib import Path
+import numpy as np
 import pytz
 import tweepy
 import telepot
 import time as tmtime
 global TIME5MINUTES
-from threading import Thread
 from time import sleep
-from pathlib import Path
 import yaml
 import os
 import sounddevice as sd
@@ -64,7 +69,7 @@ def main():
             sd.sleep(-1)
     except KeyboardInterrupt:
         print("Stopped")
-def print_sound(indata, outdata, frames, time, status):
+def print_sound(indata):
     global VOLUME_NORM
     global STOP_THREAD
     global THREADRUNONCE
@@ -89,7 +94,6 @@ apikeys = get_file_contents('auth.yaml')
 auth = tweepy.OAuthHandler(apikeys['twitter']['consumer_key'], apikeys['twitter']['consumer_secret'])
 auth.set_access_token(apikeys['twitter']['access_token'], apikeys['twitter']['access_token_secret'])
 TOWNNAME = 'Kyiv' #Set the towns name
-import os
 print(os.name)
 if os.name == 'nt':
     IMAGEFILE = dname + '\\images\\' + TOWNNAME + '.png' #Attempt to load the image file (Windows)
