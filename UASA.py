@@ -92,7 +92,11 @@ def print_sound(indata):
         else:
             STOP_THREAD = True
     except KeyboardInterrupt:
+<<<<<<< HEAD
         sys.exit(0)
+=======
+        quit
+>>>>>>> a874c08175e2b4065e66410ad398bc074f189aa4
 
 # Authenticate to Twitter
 apikeys = get_file_contents('auth.yaml')
