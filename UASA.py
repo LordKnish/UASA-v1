@@ -74,13 +74,12 @@ def main():
             sd.sleep(-1)
     except KeyboardInterrupt:
         print("Stopped")
-def print_sound(indata):
+def print_sound(indata, outdata, frames, time, status):
     global VOLUME_NORM
     global STOP_THREAD
     global THREADRUNONCE
     try:
         VOLUME_NORM = np.linalg.norm(indata)*10
-        print(VOLUME_NORM)
         if(int(VOLUME_NORM) > 35): #volume level to trigger the script
             STOP_THREAD = False
             
