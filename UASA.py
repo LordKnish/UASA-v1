@@ -5,19 +5,22 @@
 # pylint: disable=trailing-whitespace
 # pylint: disable=line-too-long
 # pylint disable=invalid-name
+# pylint disable=global-variable-not-assigned
+# pylint diable=consider-using-with
+# pylint disable=missing-function-docstring
+# pylint disable=pointless-statement
+# pylint disable=bare-except
 import os
 from datetime import datetime, timedelta
 from threading import Thread
 from pathlib import Path
+from time import sleep
 import numpy as np
 import pytz
 import tweepy
 import telepot
-import time as tmtime
 global TIME5MINUTES
-from time import sleep
 import yaml
-import os
 import sounddevice as sd
 THREADRUNONCE = False
 
@@ -42,7 +45,7 @@ def timer():
     Ukraine_Time = datetime.now(tz).strftime('%H:%M:%S')
     Ukraine_Date = datetime.now(tz).strftime('%d/%m/%Y')
     while sleep_duration > 0:
-        if(STOP_THREAD == True):
+        if(STOP_THREAD is True):
             print("Thread stopped at " + str(sleep_duration) + ' - ' + str(VOLUME_NORM))
             break
         else:
