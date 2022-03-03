@@ -1,1 +1,6 @@
-sounddevice numpy datetime pytz tweepy telepot
+numpy==1.21.5
+pytz==2020.1
+PyYAML==6.0
+sounddevice==0.4.4
+telepot==12.7
+tweepy==3.10.0
