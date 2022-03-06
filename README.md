@@ -42,7 +42,6 @@ Roadmap is for Verison 2.0
 
 - API development :soon:
 
-- API development :wavy_dash:
 
 ### Recent additions:
 
