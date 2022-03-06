@@ -12,7 +12,7 @@ Created by Aurora Knish from [Aurora Intel](https://twitter.com/AuroraIntel)
 ## Appendix
 
 - [Road map and Recent additions:](#road-map-and-recent-additions)
-  * [Currently supported Oblasts:](#currently-supported-oblasts)
+  * [Currently supported areas:](#currently-supported-areas)
   * [Roadmap](#roadmap)
   * [Recent additions:](#recent-additions)
 - [Map creation details:](#map-creation-details)
@@ -23,7 +23,7 @@ Created by Aurora Knish from [Aurora Intel](https://twitter.com/AuroraIntel)
 
 
 ## Road map and Recent additions:
-### Currently supported Oblasts:
+### Currently supported areas:
 ![supported](https://github.com/LordKnish/UASA/blob/main/images/UKAsupported.png?raw=true)
 
 ### Roadmap
