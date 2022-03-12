@@ -26,6 +26,34 @@ Created by Aurora Knish from [Aurora Intel](https://twitter.com/AuroraIntel)
 ### Currently supported areas:
 ![supported](https://github.com/LordKnish/UASA/blob/main/images/UKAsupported.png?raw=true)
 
+|     **Region Name**    	|     **Support Status**    	|
+|:----------------------:	|:-------------------------:	|
+| Cherkasy Oblast        	| **Full support**          	|
+| Chernihiv Oblast       	| **Full support**          	|
+| Chernivtsi Oblast      	| To be added               	|
+| Dnipropetrovsk Oblast  	| _Dnipro city only_        	|
+| Donetsk Oblast         	| To be added               	|
+| Ivano-Frankivsk Oblast 	| _Full Oblast alerts only_ 	|
+| Kharkiv Oblast         	| To be added               	|
+| Kherson Oblast         	| To be added               	|
+| Khmelnytskyi Oblast    	| To be added               	|
+| Kirovohrad Oblast      	| **Full support**          	|
+| Kyiv (Municipality)    	| **Full support**          	|
+| Kyiv Oblast            	| **Full Support**          	|
+| Luhansk Oblast         	| To be added               	|
+| Lviv Oblast            	| To be added               	|
+| Mykolaiv Oblast        	| **Full support**          	|
+| Odesa Oblast           	| _Odesa city only_         	|
+| Poltava Oblast         	| **Full support**          	|
+| Rivne Oblast           	| To be added               	|
+| Sumy Oblast            	| To be added               	|
+| Ternopil Oblast        	| To be added               	|
+| Vinnytsia Oblast       	| To be added               	|
+| Volyn Oblast           	| _Full Oblast alerts only_ 	|
+| Zakarpattia Oblast     	| To be added               	|
+| Zaporizhzhia Oblast    	| To be added               	|
+| Zhytomyr Oblast        	| _Full Oblast alerts only_ 	|
+
 ### Roadmap
 Roadmap is for Verison 2.0
 
